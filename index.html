@@ -10,26 +10,31 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet">
-<link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
-
+<link rel=“stylesheet” href=“https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css”
+    integrity=“sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==”
+    crossorigin=“anonymous” referrerpolicy=“no-referrer” />
+<link 
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
-   <header class="page-header">
-           <nav class="conteiner main-nav">
-              <a href="./index.html" class="logo link"><span class="logo-part">WEB</span>STUDIO</a>
+<header class="page-header">
+       <div class="conteiner main-nav">
+          <a href="./index.html" class="logo link"><span class="logo-part">WEB</span>STUDIO</a>
+            <nav>
                <ul class="site-nav list">
-                  <li class="item"><a class="nav-link link" href="">Studio</a></li>
-                  <li class="item"><a class="nav-link link" href="">Portfolio</a></li>
+                  <li class="item"><a class="nav-link link" href="./index.html">Studio</a></li>
+                  <li class="item"><a class="nav-link link" href="./portfolio.html">Portfolio</a></li>
                   <li class="item"><a class="nav-link link" href="">Contacts</a></li>
                </ul>
-           
+            </nav>
+            <address>
                <ul class="info-nav list">
                   <li class="item"><a class="info-link link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                   <li class="item"><a class="info-link link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
                </ul>
-            </nav>
-    </header>
+           </address>
+      </div>
+</header>
 
 <main>
 
@@ -39,8 +44,8 @@
     </section> 
 
    <section>
-       <h2 class="hidden-title">text</h2>
        <div class="conteiner">
+        <h2 class="hidden-title">text</h2>
            <ul class="feature-list list">
                <li class="feature-item">
                   <h3 class="feature-title list">Strategy</h3>
@@ -68,42 +73,54 @@
         <div class="conteiner">
           <h2 class="team-title">What are we doing</h2>
            <ul class="activity-list list"> 
-               <li> 
+               <li class="img"> 
                  <img class="activity-pic" src="./images/img-1.jpg" alt="monitor with statistic" width="360">
                </li>
-              <li>
+              <li class="img">
                 <img class="activity-pic" src="./images/img-2.jpg" alt="screen" width="360">
               </li>
-              <li>
+              <li class="img">
                 <img class="activity-pic" src="./images/img-3.jpg" alt="phone" width="360">
               </li>
            </ul>
         </div>
    </section>
 
-      <section class="team">
+    <section class="team"> 
         <div class="conteiner">
             <h2 class="team-title">Our Team</h2>
             <ul class="team-list list">
                 <li class="team-pic">
                     <img class="team-picture" src="./images/img0.jpg" alt="mark guerrero" width="264">
-                    <h3 class="team-subtitle">Mark Guerrero</h3>
-                    <p class="team-text">Product Designer</p>
+                    
+                    <div class="card-cont">
+                       <h3 class="team-subtitle">Mark Guerrero</h3>
+                       <p class="team-text">Product Designer</p>
+                    </div>
                 </li>
                 <li class="team-pic">
                     <img class="team-picture" src="./images/img1.jpg" alt="tom ford" width="264">
-                    <h3 class="team-subtitle">Tom Ford</h3>
-                    <p class="team-text">Frontend Developer</p>
+                    
+                  <div class="card-cont">
+                     <h3 class="team-subtitle">Tom Ford</h3>
+                     <p class="team-text">Frontend Developer</p>
+                  </div>
                 </li>
                 <li class="team-pic">
                     <img class="team-picture" src="./images/img3.jpg" alt="camila garcia" width="264">
-                    <h3 class="team-subtitle">Camila Garcia</h3>
-                    <p class="team-text">Marketing</p>
+                    
+                    <div class="card-cont">
+                      <h3 class="team-subtitle">Camila Garcia</h3>
+                      <p class="team-text">Marketing</p>
+                    </div>
                 </li>
                 <li class="team-pic">
                     <img class="team-picture" src="./images/img2.jpg" alt="daniel wilson" width="264">
-                    <h3 class="team-subtitle">Daniel Wilson</h3>
-                    <p class="team-text">UI Designer</p>
+                    
+                    <div class="card-cont">
+                      <h3 class="team-subtitle">Daniel Wilson</h3>
+                      <p class="team-text">UI Designer</p>
+                    </div>
                 </li>
             </ul>
       </div>

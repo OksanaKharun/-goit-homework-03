@@ -13,6 +13,10 @@ body {
     font-size: 16px;
     line-height: 1.5;
 }
+
+h1,h2,h3,h4,h5,p {
+    margin: 0;
+}
 .link {
     text-decoration: none;
 }
@@ -32,16 +36,27 @@ img {
 }
 /*-----------------------------------HEADER---------------------------------*/
 .conteiner {
+    padding: 0 15px;
     margin-left: auto;
     margin-right: auto;
     width: 1158px;
     
+    
+}
+.page-header {
+    border-bottom: 1px solid #E7E9FC;
+
 }
 .main-nav {
     display: flex;
     align-items: center;
+    
+    
+    
 }
 .logo {
+    padding-top: 24px;
+    padding-bottom: 24px;
     
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
@@ -93,12 +108,15 @@ margin-right: 0;
 
 .info-nav {
     display: flex;
-    margin-left: auto;
+    margin-left: 332px;
+
 }
 .info-nav .item+ .item {
-    margin-left: 55px;
+    margin-left: 40px;
 }
 .info-link {
+    padding-top: 24px;
+    padding-bottom: 24px;
 
     font-weight: 500;
     font-size: 16px;
@@ -116,18 +134,20 @@ margin-right: 0;
 }
 /*--------------------------------------BODY-----------------------------------*/
 .hero {
-    padding-top: 190px;
+    padding-top: 188px;
+    padding-bottom: 188px;
     background-color: #2E2F42;
     text-align: center;
 }
 .hero-title {
- 
-  margin-bottom: 48px;
+  
+  width: 496px;
+  margin: 0 auto;
+
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
-  
 
 color: #FFFFFF;
 
@@ -145,11 +165,13 @@ color: #FFFFFF;
   color: #FFFFFF;
   background-color: #4D5AE5;
 
+  margin-top: 48px;
   border-radius: 4px;
+  border: none;
   padding: 16px 32px;
   display: inline-block;
   text-align: center;
-  margin-bottom: 308px;
+  
 
 }
 .button:hover,
@@ -175,6 +197,8 @@ color: #FFFFFF;
   display: flex;
 }
 .feature-item {
+    padding-top: 120px;
+    padding-bottom: 120px;
     width: 264px;
     margin-right: 34px;
 }
@@ -183,7 +207,7 @@ margin-right: 0;
 }
 
 .feature-title {
-    margin-top: 120px;
+    
     margin-bottom: 8px;
 
     font-weight: 500;
@@ -195,7 +219,7 @@ margin-right: 0;
 }
 
 .feature-text {
-    margin-bottom: 120px;
+   
     
     font-size: 16px;
     line-height: 1.5;
@@ -220,16 +244,16 @@ letter-spacing: 0.02em;
 
 .activity-list {
     display: flex;
+    padding-bottom: 120px;
 }
 
-.activity-list:last-child {
+.img:last-child {
     margin-right: 0;
 }
-
-.activity-pic {
+.img {
     margin-right: 39px;
-    margin-bottom: 120px;
 }
+
 
 .team {
     padding-top: 120px;
@@ -245,7 +269,7 @@ margin-right: 34px;
 background-color:#FFFFFF;
 }
 
-.team-list:last-child {
+.team-pic:last-child {
     margin-right: 0;
 }
 
@@ -261,7 +285,7 @@ background-color:#FFFFFF;
 }
 
 .team-text {
-    margin-bottom: 30px;
+    
 
     font-size: 16px;
     line-height: 1.5;
@@ -271,14 +295,19 @@ background-color:#FFFFFF;
     color: var(--primary-text-color);
 
 }
+.card-cont {
+    padding: 32px 16px;
+}
 
 /*-----------------------------------FOOTER-----------------------------------*/
 .footer {
     background-color: #2E2F42;
+    padding: 100px 0;
 }
 
 .logo-footer {
-    margin-bottom: 16px;
+  margin-bottom: 16px;
+  display: inline-block;
 
     font-weight: 800;
     font-size: 18px;
@@ -304,7 +333,9 @@ background-color:#FFFFFF;
 
 /*------------------BODY-----------------------*/
 
-
+.menu {
+    padding: 96px 0 120px;
+}
 .visually-hidden {
    position: absolute;
     width: 1px;
@@ -328,10 +359,7 @@ background-color:#FFFFFF;
 }
 
 .menu-item .btn {
-  margin-right: 24px;
-  margin-bottom: 72px;
-  margin-top: 96px;
-
+ 
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -341,25 +369,39 @@ background-color:#FFFFFF;
 
     color: #4D5AE5;
     background-color: #F4F4FD;
+    border: 1px solid #E7E9FC;
+    border-radius: 4px;
 }
 
-
+.btn {
+    margin-right: 24px;
+    margin-bottom: 72px;
+    
+}
 
 .btn:focus,
 .btn:hover {
     background-color: var(--accent-color);
-    color: #FFFFFF;;
+    color: #FFFFFF;
+    border-color: transparent;
 }
-
+..services-item {
+    margin-right: 24px;
+}
 
 .services-item .title {
     
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 1.2;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
 
-        color: var(--title-text-color);
+  color: var(--title-text-color);
    
+}
+
+.title {
+    margin-bottom: 8px;
+
 }
 .services-item .text {
     
@@ -373,25 +415,22 @@ background-color:#FFFFFF;
     list-style: none;
     padding: 0;
     margin: 0;
-    margin-left: var(-1 * --card-set-gap);
-    margin-top: var(-1 * --card-set-gap);
+    margin-left: -24px;
+    margin-top: -48px;
 
     display: flex;
     flex-wrap: wrap;
 }
 
 .services-list .services-item {
-    flex-basis: calc(100%/3 - 20px);
+    flex-basis: calc(100% / 3 - 24px);
 
-    margin-left: var(--card-set-gap);
-    margin-top: var(--card-set-gap);
+    margin-left: 24px;
+    margin-top: 48px;
 
     border-radius: 2px;
     overflow: hidden;
 }
 
 .card-conteiner {
-    padding-left: 14px;
-    padding-bottom: 32px;
-    padding-top: 30px;
-}
+    padding: 32px 16px;
