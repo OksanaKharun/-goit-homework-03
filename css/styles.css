@@ -108,13 +108,14 @@ margin-right: 0;
 
 .info-nav {
     display: flex;
-    margin-left: 332px;
+    margin-left:auto;
 
 }
 .info-nav .item+ .item {
     margin-left: 40px;
 }
 .info-link {
+    display: block;
     padding-top: 24px;
     padding-bottom: 24px;
 
@@ -180,6 +181,9 @@ color: #FFFFFF;
     color: #FFFFFF;
 }
 
+.feature-section {
+    padding: 120px 0 ;
+}
 .hidden-title {
     position: absolute;
     width: 1px;
@@ -197,10 +201,9 @@ color: #FFFFFF;
   display: flex;
 }
 .feature-item {
-    padding-top: 120px;
-    padding-bottom: 120px;
+
     width: 264px;
-    margin-right: 34px;
+    margin-right: 24px;
 }
 .feature-item:last-child {
 margin-right: 0;
@@ -241,10 +244,11 @@ letter-spacing: 0.02em;
 
   color: var(--title-text-color);
 }
-
+.activity-section {
+    padding-bottom: 120px;
+}
 .activity-list {
     display: flex;
-    padding-bottom: 120px;
 }
 
 .img:last-child {
@@ -252,6 +256,7 @@ letter-spacing: 0.02em;
 }
 .img {
     margin-right: 39px;
+    width: 360px;
 }
 
 
@@ -264,7 +269,8 @@ letter-spacing: 0.02em;
     display: flex;
 }
 .team-pic{
-margin-right: 34px;
+    width: 264px;
+margin-right: 24px;
 
 background-color:#FFFFFF;
 }
@@ -352,6 +358,7 @@ background-color:#FFFFFF;
 .menu-item {
     display: flex;
     justify-content: center;
+    margin-bottom: 72px;
 }
 
 .menu-item:last-child {
@@ -371,11 +378,12 @@ background-color:#FFFFFF;
     background-color: #F4F4FD;
     border: 1px solid #E7E9FC;
     border-radius: 4px;
+    padding: 12px 24px;
 }
 
 .btn {
     margin-right: 24px;
-    margin-bottom: 72px;
+    
     
 }
 
@@ -428,9 +436,10 @@ background-color:#FFFFFF;
     margin-left: 24px;
     margin-top: 48px;
 
-    border-radius: 2px;
     overflow: hidden;
 }
 
 .card-conteiner {
     padding: 32px 16px;
+    border: 1px solid #E7E9FC;
+    border-top: none;
