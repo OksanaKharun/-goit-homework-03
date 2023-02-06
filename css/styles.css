@@ -255,7 +255,7 @@ letter-spacing: 0.02em;
     margin-right: 0;
 }
 .img {
-    margin-right: 39px;
+    margin-right: 24px;
     width: 360px;
 }
 
@@ -381,9 +381,8 @@ background-color:#FFFFFF;
     padding: 12px 24px;
 }
 
-.btn {
+.btn-list {
     margin-right: 24px;
-    
     
 }
 
